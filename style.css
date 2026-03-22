@@ -25,14 +25,32 @@
 
 }
 
-img{
-  height: 20px;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(264deg) brightness(102%) contrast(105%);
+form {
+  padding: 10px;
+  display: inline-block; 
+  border: none;
+  outline: none;
+}
+
+input{
+  background-color: #e0e0e0;
+  border-radius: 50px ;
+  display: absolute; 
+  width: 400%;
+  
+
 }
 
 
+h1{
+  font-size: 12px;
+  color:#fff;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
 
 
+/* Side Bar CSS */
 .side-bar{
     display: grid;
   padding: 10px;
@@ -50,34 +68,13 @@ img{
 
   .dash-board{
   height:50px;
+
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(264deg) brightness(102%) contrast(105%);
 }
 
-h1{
-  font-size: 12px;
-  color:#fff;
-  font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
-}
 
 .h1-dash-board{
   font-size: 20px;
-}
-
-
-.header{
-  background-color: #FAFAFA;
-  border-bottom: solid #D3D3D3;
-
-
-
-
-
-}
-
-.main-content{
-  background-color: #909EAE;
-  grid-column-start: 2;
-
 }
 
 .item, .item2 {
@@ -91,10 +88,101 @@ h1{
   padding-top: 100px;
 }
 
-
-
 .items{
   padding-left: 15px
+}
+
+.items, .item2 img{
+  height: 20px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(264deg) brightness(102%) contrast(105%);
+}
+
+/* Header CSS */
+
+
+.header{
+  background-color: #FAFAFA;
+  border-bottom: solid #D3D3D3;
+  display: grid;
+}
+
+
+
+.header-img{
+  height: 30px ;
+
+}
+
+.profile{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+
+}
+
+.header h1{
+  color: #000;
+}
+
+.header-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+ 
+}
+
+.header-top-right, .header-top-left{
+  display: flex;
+  align-items: center;
+
+}
+
+.header-top-right{
+  padding-left: 50px;
+
+}
+
+
+.header-top-left{
+  gap: 20px;
+  padding-right: 50px ;
+
+  
+
+
+}
+
+.header-bot{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-bot-left, .header-bot-right{
+  display: flex;
+   align-items: center;
+  
+}
+
+.header-bot-left{
+  gap: 20px;
+ padding-left: 50px;
+}
+.header-bot-right{
+  padding-right: 50px;
+  gap: 20px;
+
+}
+
+
+
+/* Main Content CSS */
+
+.main-content{
+  background-color: #909EAE;
+  grid-column-start: 2;
+
 }
 
 
